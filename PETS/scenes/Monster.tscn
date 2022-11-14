@@ -1,0 +1,80 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/egg.png" type="Texture" id=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+
+onready var current_level = 0
+
+onready var egg = preload(\"res://sprites/egg.png\")
+onready var creature = preload(\"res://sprites/creature.png\")
+
+onready var life_in_seconds = 30
+onready var stage_in_seconds = 10
+onready var hunger_in_seconds = 2
+
+onready var hunger = 100
+
+func _ready():
+	var life_timer = $LifeTimer
+	var stage_timer = $StageTimer
+	var hunger_timer = $HungerTimer
+	
+	stage_timer.start(stage_in_seconds)
+	life_timer.start(life_in_seconds)
+	hunger_timer.start(hunger_in_seconds)
+
+func _process(_delta):
+	pass
+
+func handle_stage(current_level):
+	if current_level == 0:
+		print('egg')
+		$Sprite.set_texture(egg)
+	elif current_level == 1:
+		$Sprite.set_texture(creature)
+	else: 
+		print('_')
+		current_level = 0
+		$Sprite.set_texture(egg)
+
+# signal emission for the stage timer (when it ends:)
+func _on_StageTimer_timeout():
+	current_level += 1
+	print(current_level)
+	handle_stage(current_level)
+
+
+func _on_LifeTimer_timeout():
+	current_level = 0
+	print('old age: ', current_level)
+	hunger = 100
+	handle_stage(current_level)
+
+
+func _on_HungerTimer_timeout():
+	print(hunger)
+	print(current_level)
+	if current_level != 0:
+		hunger -= 5
+"
+
+[node name="Monster" type="Node2D"]
+script = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 8.99999, -56 )
+scale = Vector2( 6.125, 6.25 )
+texture = ExtResource( 2 )
+
+[node name="LifeTimer" type="Timer" parent="."]
+
+[node name="StageTimer" type="Timer" parent="."]
+
+[node name="HungerTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="LifeTimer" to="." method="_on_LifeTimer_timeout"]
+[connection signal="timeout" from="StageTimer" to="." method="_on_StageTimer_timeout"]
+[connection signal="timeout" from="HungerTimer" to="." method="_on_HungerTimer_timeout"]

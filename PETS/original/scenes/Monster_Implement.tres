@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://scenes/base_monster.gd" type="Script" id=1]
+[ext_resource path="res://sprites/egg.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "Monster"
+texture = ExtResource( 2 )
+hunger = 0

@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Stats" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+margin_right = 40.0
+margin_bottom = 40.0

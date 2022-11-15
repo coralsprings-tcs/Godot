@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/UserMenu.gd" type="Script" id=1]
+[ext_resource path="res://feed.tscn" type="PackedScene" id=2]
+
+[node name="UserMenu" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FeedButton" type="Button" parent="."]
+anchor_left = -1.05
+anchor_top = 2.1
+anchor_right = -1.05
+anchor_bottom = 2.1
+margin_right = 85.0
+margin_bottom = 49.0
+text = "Feed"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="feed" parent="." instance=ExtResource( 2 )]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[connection signal="pressed" from="FeedButton" to="." method="_on_FeedButton_pressed"]

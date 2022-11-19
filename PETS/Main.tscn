@@ -10,7 +10,7 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Monster" parent="." instance=ExtResource( 3 )]
-position = Vector2( 296, 120 )
+position = Vector2( 295, 120 )
 
 [node name="UserMenu" parent="." instance=ExtResource( 1 )]
 margin_left = 85.0

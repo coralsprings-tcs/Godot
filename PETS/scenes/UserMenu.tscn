@@ -25,6 +25,4 @@ __meta__ = {
 
 [node name="feed" parent="." instance=ExtResource( 2 )]
 
-[node name="Node2D" type="Node2D" parent="."]
-
 [connection signal="pressed" from="FeedButton" to="." method="_on_FeedButton_pressed"]

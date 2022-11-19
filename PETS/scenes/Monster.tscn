@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://sprites/egg.png" type="Texture" id=2]
+[ext_resource path="res://egg.png" type="Texture" id=2]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
@@ -8,8 +8,8 @@ script/source = "extends Node2D
 
 onready var current_level = 0
 
-onready var egg = preload(\"res://sprites/egg.png\")
-onready var creature = preload(\"res://sprites/creature.png\")
+onready var egg = preload(\"res://egg.png\")
+onready var creature = preload(\"res://original/sprites/creature.png\")
 
 onready var life_in_seconds = 30
 onready var stage_in_seconds = 10

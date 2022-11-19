@@ -12,6 +12,4 @@ position = Vector2( 6.00001, 3 )
 scale = Vector2( 6.9375, 6.3125 )
 texture = ExtResource( 1 )
 
-[node name="MustardVisible" type="Timer" parent="."]
-wait_time = 2.0
-one_shot = true
+[node name="BarbecueFish" type="Sprite" parent="."]

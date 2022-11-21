@@ -6,14 +6,22 @@
 [node name="Main" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
+margin_top = -1.0
 margin_right = 40.0
-margin_bottom = 40.0
+margin_bottom = 39.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Monster" parent="." instance=ExtResource( 3 )]
-position = Vector2( 296, 120 )
+position = Vector2( 513, 299 )
 
 [node name="UserMenu" parent="." instance=ExtResource( 1 )]
 margin_left = 85.0
 margin_top = 64.0
 margin_right = 130.0
 margin_bottom = 94.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 513, 299 )
+current = true

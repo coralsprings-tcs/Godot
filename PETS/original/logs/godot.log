@@ -1,0 +1,28 @@
+Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
+OpenGL ES 3.0 Renderer: Intel(R) Iris(R) Xe Graphics
+OpenGL ES Batching: ON
+ 
+ERROR: Resource file not found: res://musturd ham.png.
+   at: _load (core/io/resource_loader.cpp:275) - Condition "!file_check->file_exists(p_path)" is true. Returned: RES()
+ERROR: res://feed.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://musturd ham.png
+   at: poll (scene/resources/resource_format_text.cpp:412) - res://feed.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://musturd ham.png
+ERROR: Failed to load resource 'res://feed.tscn'.
+   at: load (core/io/resource_loader.cpp:206) - Condition "err != OK" is true. Returned: RES()
+ERROR: Failed loading resource: res://feed.tscn. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:270) - Condition "found" is true. Returned: RES()
+ERROR: res://scenes/UserMenu.tscn:4 - Parse Error: [ext_resource] referenced nonexistent resource at: res://feed.tscn
+   at: poll (scene/resources/resource_format_text.cpp:412) - res://scenes/UserMenu.tscn:4 - Parse Error: [ext_resource] referenced nonexistent resource at: res://feed.tscn
+ERROR: Failed to load resource 'res://scenes/UserMenu.tscn'.
+   at: load (core/io/resource_loader.cpp:206) - Condition "err != OK" is true. Returned: RES()
+ERROR: Failed loading resource: res://scenes/UserMenu.tscn. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:270) - Condition "found" is true. Returned: RES()
+ERROR: res://Main.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://scenes/UserMenu.tscn
+   at: poll (scene/resources/resource_format_text.cpp:412) - res://Main.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://scenes/UserMenu.tscn
+ERROR: Failed to load resource 'res://Main.tscn'.
+   at: load (core/io/resource_loader.cpp:206) - Condition "err != OK" is true. Returned: RES()
+ERROR: Failed loading resource: res://Main.tscn. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:270) - Condition "found" is true. Returned: RES()
+ERROR: Failed loading scene: res://Main.tscn
+   at: start (main/main.cpp:2011) - Condition "!scene" is true. Returned: false
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+   at: cleanup (core/object.cpp:2064) - ObjectDB instances leaked at exit (run with --verbose for details).

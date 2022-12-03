@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/relish lobster.png.png-3ff82beebb2c59ca6906989ccf9ef656.stex"
+path="res://.import/relish lobster.png-40b5635ed06e268edd5d7b00882cda35.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://relish lobster.png.png"
-dest_files=[ "res://.import/relish lobster.png.png-3ff82beebb2c59ca6906989ccf9ef656.stex" ]
+source_file="res://relish lobster.png"
+dest_files=[ "res://.import/relish lobster.png-40b5635ed06e268edd5d7b00882cda35.stex" ]
 
 [params]
 

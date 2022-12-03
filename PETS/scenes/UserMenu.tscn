@@ -12,9 +12,9 @@ __meta__ = {
 }
 
 [node name="MustardHamButton" type="Button" parent="."]
-anchor_left = -1.575
+anchor_left = -1.65
 anchor_top = 3.65
-anchor_right = -0.35
+anchor_right = -0.425
 anchor_bottom = 3.65
 margin_right = 85.0
 margin_bottom = 49.0
@@ -24,33 +24,33 @@ __meta__ = {
 }
 
 [node name="BarbecueFishButton" type="Button" parent="."]
-anchor_left = -1.625
-anchor_top = 5.8
-anchor_right = -0.3
-anchor_bottom = 5.8
+anchor_left = -2.75
+anchor_top = 5.825
+anchor_right = 0.65
+anchor_bottom = 5.825
 margin_right = 85.0
 margin_bottom = 49.0
 rect_pivot_offset = Vector2( 105, 49 )
-text = "Barbecue Fish ($15)"
+text = "Barbecue Fish (Level 5 Required)"
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="RelishLobsterButton" type="Button" parent="."]
-anchor_left = -1.65
-anchor_top = 7.925
-anchor_right = -0.325
-anchor_bottom = 7.925
+anchor_left = -2.85
+anchor_top = 7.95
+anchor_right = 0.775
+anchor_bottom = 7.95
 margin_right = 85.0
 margin_bottom = 49.0
 rect_pivot_offset = Vector2( 105, 49 )
-text = "Relish Lobster ($20)"
+text = "Relish Lobster (Level 10 Required)"
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="feed" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1, 14 )
+position = Vector2( 0, 22 )
 
 [connection signal="pressed" from="MustardHamButton" to="." method="_on_MustardHamButton_pressed"]
 [connection signal="pressed" from="BarbecueFishButton" to="." method="_on_BarbecueFishButton_pressed"]

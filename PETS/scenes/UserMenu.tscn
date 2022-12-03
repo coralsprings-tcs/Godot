@@ -13,45 +13,63 @@ __meta__ = {
 
 [node name="MustardHamButton" type="Button" parent="."]
 anchor_left = -1.65
-anchor_top = 3.65
+anchor_top = 1.075
 anchor_right = -0.425
-anchor_bottom = 3.65
+anchor_bottom = 1.075
+margin_top = -40.0
 margin_right = 85.0
-margin_bottom = 49.0
-text = "Mustard Ham ($10)"
+margin_bottom = 9.0
+text = "Mustard Ham"
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
 
 [node name="BarbecueFishButton" type="Button" parent="."]
 anchor_left = -2.75
-anchor_top = 5.825
+anchor_top = 3.25
 anchor_right = 0.65
-anchor_bottom = 5.825
+anchor_bottom = 3.25
+margin_top = -40.0
 margin_right = 85.0
-margin_bottom = 49.0
+margin_bottom = 9.0
 rect_pivot_offset = Vector2( 105, 49 )
 text = "Barbecue Fish (Level 5 Required)"
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
 
 [node name="RelishLobsterButton" type="Button" parent="."]
 anchor_left = -2.85
-anchor_top = 7.95
+anchor_top = 5.375
 anchor_right = 0.775
-anchor_bottom = 7.95
+anchor_bottom = 5.375
+margin_top = -37.0
 margin_right = 85.0
-margin_bottom = 49.0
-rect_pivot_offset = Vector2( 105, 49 )
+margin_bottom = 12.0
+rect_pivot_offset = Vector2( 309, 36 )
 text = "Relish Lobster (Level 10 Required)"
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
+}
+
+[node name="MayoShrimpButton" type="Button" parent="."]
+anchor_left = -2.85
+anchor_top = 5.375
+anchor_right = 0.775
+anchor_bottom = 5.375
+margin_top = 29.0
+margin_right = 85.0
+margin_bottom = 78.0
+rect_pivot_offset = Vector2( 309, 36 )
+text = "Mayo Shrimp (Level 20 Required)"
+__meta__ = {
+"_edit_use_anchors_": false
 }
 
 [node name="feed" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, 22 )
+position = Vector2( 425, 78 )
 
 [connection signal="pressed" from="MustardHamButton" to="." method="_on_MustardHamButton_pressed"]
 [connection signal="pressed" from="BarbecueFishButton" to="." method="_on_BarbecueFishButton_pressed"]
 [connection signal="pressed" from="RelishLobsterButton" to="." method="_on_RelishLobsterButton_pressed"]
+[connection signal="pressed" from="MayoShrimpButton" to="." method="_on_MayoShrimpButton_pressed"]
